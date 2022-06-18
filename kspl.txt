@@ -1,0 +1,63 @@
+settup:
+ram numb;
+setting how big is ram.
+reg numb;
+setting amount of reg.
+bit numb;
+setting bits of alu;
+
+possible usage:
+ram 16;
+reg 2;
+bit 8;
+
+alu operations:
+- - subtract operation
++ - add operation
+/ - division operation
+* - multiplication operation
+ram[numb] = output - giving output of alu to ram
+reg[numb] = output - giving output of alu to reg
+reg[numb] = reg[numb] operation reg[numb]
+ram[numb] = ram[numb] operation ram[numb]
+possible usage:
+reg3 = reg1 + reg2
+classes possible usage:
+class Human {
+   constructor(string name, int age) {
+       this.name = name;
+       this.age = age;
+}}
+stores variables
+variables:
+char[numb]; - stores characters
+int; - stores numbers
+bool; - stores false/true
+console:
+write - writes to console string
+input - inputs keyboard from user
+possible usage:
+char[10] sos =  input;
+write(sos);
+
+jumps:
+jump if(arg) [numb]; - jumps to line of code if argument is completed
+jump [numb]; jumps to line of codes
+possible usage:
+0.write("what is your name");
+1.char[10] name = input;
+2.jump if(name=="sos") 0;
+
+if statement:
+if(arg) {} - do something if argument is completed
+possible args:
+reg[numb] == reg[numb]
+!reg[numb]==reg[numb]
+char name == "text";
+int [name] == [numb];
+[number] == [number]
+char [name] == char [name]
+
+ram and reg operations:
+ram[numb] = reg[numb] - sets ram from reg;
+reg[numb] = ram[numb] - sets reg from ram ;
